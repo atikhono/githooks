@@ -162,7 +162,15 @@ Settings format: None, always runs with an empty list []
 * __py_indent__ (basic indentation check in python scripts)
 
 Implements checking if any of the modified python scripts contains
-mixed indentation (both tabs and spaces).
+mixed indentation (both tabs and spaces). NB: obsolete by __pep8hook__.
+
+Settings format: None, always runs with an empty list []
+
+* __pep8hook__ (PEP8 -- style guide for Python code)
+
+Runs pep8 tool against the modified python script. Reports errors
+only in changed lines. NB: uses built-in pep8; requires no system package.
+NB: obsoletes __py_indent__.
 
 Settings format: None, always runs with an empty list []
 
